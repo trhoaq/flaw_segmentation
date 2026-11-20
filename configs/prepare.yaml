@@ -1,0 +1,13 @@
+source_root: D:/dataset/rail
+output_root: D:/dataset/rail/yolo
+seed: 42
+train_ratio: 0.8
+val_ratio: 0.1
+workers: 4
+class_name: rail_surface_defect
+minimum_roundtrip_iou: 0.995
+convert_nrsd_original: true
+include_coarse_rail5k: false
+# Original and relabel versions are both converted; only relabel enters combined lists.
+# CGAN derivatives inherit the split of their RSDDs source frame.
+# Default validation and test contain real images only.
